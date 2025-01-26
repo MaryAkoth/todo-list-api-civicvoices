@@ -15,7 +15,7 @@ This is a simple REST API for managing a to-do list, built using Node.js, Expres
 1. Clone the repository:
 
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/MaryAkoth/todo-list-api-civicvoices.git
    cd todo-list-api
    ```
 
@@ -51,7 +51,7 @@ This is a simple REST API for managing a to-do list, built using Node.js, Expres
 
   ```json
   {
-    "title": "Buy groceries",
+    "title": "finish recent backend project",
     "completed": false
   }
   ```
