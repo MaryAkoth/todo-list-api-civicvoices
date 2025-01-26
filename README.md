@@ -14,33 +14,33 @@ This is a simple REST API for managing a to-do list, built using Node.js, Expres
 
 1. Clone the repository:
 
-    ```sh
-    git clone <repository-url>
-    cd todo-list-api
-    ```
+   ```sh
+   git clone <repository-url>
+   cd todo-list-api
+   ```
 
 2. Install dependencies:
 
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
 3. Create a `.env` file in the root directory with your MySQL database credentials:
 
-    ```env
-    DB_HOST=localhost
-    DB_USER=root
-    DB_PASS=
-    DB_NAME=todo_list
-    ```
+   ```env
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASS=
+   DB_NAME=todo_list
+   ```
 
 4. Ensure MySQL is running and a database named `todo_list` is created.
 
 5. Start the server:
 
-    ```sh
-    node server.js
-    ```
+   ```sh
+   node server.js
+   ```
 
 ## API Endpoints
 
@@ -49,18 +49,18 @@ This is a simple REST API for managing a to-do list, built using Node.js, Expres
 - **Endpoint**: `POST /todos`
 - **Body**:
 
-    ```json
-    {
-      "title": "Buy groceries",
-      "completed": false
-    }
-    ```
+  ```json
+  {
+    "title": "Buy groceries",
+    "completed": false
+  }
+  ```
 
 - **Example Request**:
 
-    ```sh
-    curl -X POST http://localhost:3000/todos -H "Content-Type: application/json" -d '{"title": "Buy groceries", "completed": false}'
-    ```
+  ```sh
+  curl -X POST http://localhost:3000/todos -H "Content-Type: application/json" -d '{"title": "finish recent backend project", "completed": false}'
+  ```
 
 ### Get all to-dos
 
@@ -68,27 +68,27 @@ This is a simple REST API for managing a to-do list, built using Node.js, Expres
 
 - **Example Request**:
 
-    ```sh
-    curl -X GET http://localhost:3000/todos
-    ```
+  ```sh
+  curl -X GET http://localhost:3000/todos
+  ```
 
 ### Update a to-do
 
 - **Endpoint**: `PATCH /todos/:id`
 - **Body**:
 
-    ```json
-    {
-      "title": "Buy milk",
-      "completed": true
-    }
-    ```
+  ```json
+  {
+    "title": "do more backend project",
+    "completed": true
+  }
+  ```
 
 - **Example Request**:
 
-    ```sh
-    curl -X PATCH http://localhost:3000/todos/1 -H "Content-Type: application/json" -d '{"title": "Buy milk", "completed": true}'
-    ```
+  ```sh
+  curl -X PATCH http://localhost:3000/todos/1 -H "Content-Type: application/json" -d '{"title": "do more backend project", "completed": true}'
+  ```
 
 ### Delete a to-do
 
@@ -96,16 +96,15 @@ This is a simple REST API for managing a to-do list, built using Node.js, Expres
 
 - **Example Request**:
 
-    ```sh
-    curl -X DELETE http://localhost:3000/todos/1
-    ```
+  ```sh
+  curl -X DELETE http://localhost:3000/todos/1
+  ```
 
 ## Notes
 
-- Ensure to replace `<repository-url>` with the actual URL of your GitHub repository.
+- Ensure to replace `<repository-url>` with the actual URL of your GitHub repository.that is https://github.com/MaryAkoth/todo-list-api-civicvoices.git
 - Test your API thoroughly to make sure all endpoints are working as expected.
 
 ## Author
 
-Mary Odhiambo
-
+Mary Akoth Odhiambos
